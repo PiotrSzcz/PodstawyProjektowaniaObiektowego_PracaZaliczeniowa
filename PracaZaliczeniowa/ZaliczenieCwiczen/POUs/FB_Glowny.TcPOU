@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
+  <POU Name="FB_Glowny" Id="{12d3453c-e68a-4d1f-ae44-22ee6a2954e9}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Glowny
+VAR
+	iRuchX:INT:=50;
+	iRuchY:INT:=50;
+	predkoscRuchu:TIME:=T#2MS;
+	czasoOdmierzacz:TON;
+	timerRuchu:TON;
+	iStan: INT;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[CASE iStan OF
+	
+0:
+	czasoOdmierzacz(IN:=TRUE, PT:=(predkoscRuchu/100));
+	IF czasoOdmierzacz.Q=TRUE THEN
+		iRuchY:=iRuchY+1;
+		czasoOdmierzacz(IN:=FALSE);
+	END_IF
+	IF iRuchY=600 THEN
+		iStan:=1;
+	END_IF
+
+1:
+	czasoOdmierzacz(IN:=TRUE, PT:=(predkoscRuchu/100));
+	IF czasoOdmierzacz.Q=TRUE THEN
+		iRuchX:=iRuchX+1;
+		czasoOdmierzacz(IN:=FALSE);
+	END_IF
+	IF iRuchX=1100 THEN
+		iStan:=2;
+	END_IF
+
+2:
+	czasoOdmierzacz(IN:=TRUE, PT:=(predkoscRuchu/100));
+	IF czasoOdmierzacz.Q=TRUE THEN
+		iRuchY:=iRuchY-1;
+		czasoOdmierzacz(IN:=FALSE);
+	END_IF
+	IF iRuchY=50 THEN
+		iStan:=3;
+	END_IF
+
+
+3:
+	czasoOdmierzacz(IN:=TRUE, PT:=(predkoscRuchu/100));
+	IF czasoOdmierzacz.Q=TRUE THEN
+		iRuchX:=iRuchX-1;
+		czasoOdmierzacz(IN:=FALSE);
+	END_IF
+	IF iRuchX=50 THEN
+		iStan:=0;
+	END_IF
+
+
+END_CASE]]></ST>
+    </Implementation>
+    <LineIds Name="FB_Glowny">
+      <LineId Id="20" Count="0" />
+      <LineId Id="80" Count="0" />
+      <LineId Id="83" Count="0" />
+      <LineId Id="86" Count="0" />
+      <LineId Id="100" Count="1" />
+      <LineId Id="103" Count="0" />
+      <LineId Id="102" Count="0" />
+      <LineId Id="87" Count="0" />
+      <LineId Id="104" Count="1" />
+      <LineId Id="88" Count="0" />
+      <LineId Id="85" Count="0" />
+      <LineId Id="106" Count="3" />
+      <LineId Id="90" Count="0" />
+      <LineId Id="110" Count="1" />
+      <LineId Id="91" Count="1" />
+      <LineId Id="89" Count="0" />
+      <LineId Id="112" Count="6" />
+      <LineId Id="94" Count="0" />
+      <LineId Id="96" Count="1" />
+      <LineId Id="93" Count="0" />
+      <LineId Id="120" Count="6" />
+      <LineId Id="119" Count="0" />
+      <LineId Id="84" Count="0" />
+      <LineId Id="82" Count="0" />
+      <LineId Id="81" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

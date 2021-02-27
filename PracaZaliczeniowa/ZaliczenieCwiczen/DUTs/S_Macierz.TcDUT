@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
+  <DUT Name="S_Macierz" Id="{25a6e70c-d6b6-4e4c-b5cd-a7be8fa3a0e4}">
+    <Declaration><![CDATA[TYPE S_Macierz :
+STRUCT
+	
+	MacierzPola:ARRAY[1..10] OF ARRAY[1..10] OF BOOL;
+	
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
+  <POU Name="MAIN" Id="{003304d9-0937-481e-94b7-806557916c6d}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	ObranPoczatkowy:FB_Glowny;
+	gra:FB_Snake;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[ObranPoczatkowy();
+gra();]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="8" Count="0" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

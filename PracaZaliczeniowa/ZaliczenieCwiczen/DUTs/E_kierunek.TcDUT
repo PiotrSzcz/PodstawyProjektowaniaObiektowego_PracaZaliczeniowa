@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
+  <DUT Name="E_kierunek" Id="{a27e1feb-095a-4e74-999e-39e516c03d4f}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+{attribute 'strict'}
+TYPE E_kierunek :
+(
+	lewo:=1,
+	dol,
+	prawo,
+	gora
+);
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

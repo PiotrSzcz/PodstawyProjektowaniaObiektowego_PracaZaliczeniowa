@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
+  <POU Name="FB_Snake" Id="{31d2fabe-7c50-423b-aa7d-c8ea19a5f486}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Snake EXTENDS FB_Glowny
+VAR
+
+	poleGry:S_Macierz;	
+	
+	wiersz:INT;//potem usunąć oba
+	kolumna:INT;
+	
+	stanGry:INT:=3;
+
+	iLicznikPrendkosci: INT;
+
+	
+	GAMEOVER:BOOL:=TRUE;
+	EKRANSTARTOWY:BOOL:=FALSE;
+	
+	kierunek: INT;
+	iLicznikKierunku: INT;
+	kierunekRuchu:E_kierunek;
+	
+	stanJedzenia:BOOL;
+	jedzeniePozycjaX:INT;
+	jedzeniePozycjaY:INT;
+	
+	iLicnikPunktow:INT:=1;
+	
+	iWektorOgonaX:ARRAY[2..400] OF INT;
+	iWektorOgonaY:ARRAY[2..400] OF INT;
+	iLicznikY:INT:=2;
+
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[CASE stanGry OF
+	
+0:	
+	FOR iLicznikKierunku:=1 TO 4  DO
+		IF GVL_Lista.bStanStrzalek[iLicznikKierunku]=TRUE THEN
+			kierunek:=iLicznikKierunku;							//sprawdzanie obecnego kierunku ruchu
+			IF kierunek=1 THEN
+				kierunekRuchu:=1;
+			END_IF
+			IF kierunek=2 THEN
+				kierunekRuchu:=2;
+			END_IF
+			IF kierunek=3 THEN
+				kierunekRuchu:=3;
+			END_IF
+			IF kierunek=4 THEN
+				kierunekRuchu:=4;
+			END_IF
+		END_IF
+	END_FOR
+	M_SprawdzanieKolizji();
+	IF stanJedzenia=FALSE THEN									//jeśli zdobędziemy punkt generuje nowe do zdobycia
+		M_GenerowanieJedzenia();
+	END_IF
+	
+	SUPER^.timerRuchu(IN:=TRUE,PT:=INT_TO_TIME(1000-(iLicznikPrendkosci*iLicnikPunktow))); //czas pomiędzy kolejnymi rychami 
+	IF timerRuchu.Q=TRUE THEN
+		IF  kierunek=1 THEN						//lewo
+			iLicznikY:=iLicznikY+1;
+			iWektorOgonaX[iLicznikY]:=wiersz;
+			iWektorOgonaY[iLicznikY]:=kolumna;
+			wiersz:=wiersz-1;
+		END_IF
+		
+		IF  kierunek=2 THEN						//dół
+			iLicznikY:=iLicznikY+1;
+			iWektorOgonaX[iLicznikY]:=wiersz;
+			iWektorOgonaY[iLicznikY]:=kolumna;
+			kolumna:=kolumna+1;
+			
+		END_IF
+		
+		IF  kierunek=3 THEN						//prawo
+			iLicznikY:=iLicznikY+1;
+			iWektorOgonaX[iLicznikY]:=wiersz;
+			iWektorOgonaY[iLicznikY]:=kolumna;
+			wiersz:=wiersz+1;
+			
+		END_IF
+		
+		IF  kierunek=4 THEN						//góra
+			iLicznikY:=iLicznikY+1;
+			iWektorOgonaX[iLicznikY]:=wiersz;
+			iWektorOgonaY[iLicznikY]:=kolumna;
+			kolumna:=kolumna-1;
+			
+		END_IF
+		
+		stanGry:=1;
+		
+		IF kolumna>10 OR wiersz>10 OR kolumna<1 OR wiersz<1 THEN	// detekcja kolizji z ścianą
+		stanGry:=2;
+		END_IF
+	END_IF
+
+1:
+	poleGry.MacierzPola[kolumna][wiersz]:=TRUE;
+	timerRuchu(IN:=FALSE);
+	M_Ogon();
+	
+	IF timerRuchu.Q=FALSE THEN
+		IF iLicznikPrendkosci<100 THEN
+			iLicznikPrendkosci:=iLicznikPrendkosci+1;
+		END_IF
+		IF jedzeniePozycjaX=wiersz AND jedzeniePozycjaY=kolumna THEN
+			stanJedzenia:=FALSE;
+			iLicnikPunktow:=iLicnikPunktow+1;
+		END_IF
+		stanGry:=0;
+	END_IF
+	
+	
+2:	
+	M_NowaGra();
+
+3:
+	IF GVL_Lista.bStanPRzyciskuStartu=TRUE THEN
+		M_Start();
+	END_IF
+END_CASE]]></ST>
+    </Implementation>
+    <Method Name="M_GenerowanieJedzenia" Id="{c227e4b4-9052-4591-9ec6-42f23383027a}">
+      <Declaration><![CDATA[METHOD M_GenerowanieJedzenia : BOOL
+VAR
+	iLicznik:INT;
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[
+jedzeniePozycjaX:=((iLicznikPrendkosci+wiersz) MOD 10)+1;	// z powodu iż w Twincacie nie mogłem znaleść funkcji RANDOM napisałem coś tkaiego, działa ale jest mało losowe
+IF jedzeniePozycjaX <5 THEN
+	jedzeniePozycjaX:=jedzeniePozycjaX + 2;
+END_IF
+jedzeniePozycjaY:=((jedzeniePozycjaX+kolumna) MOD 10)+1;
+IF jedzeniePozycjaY<5 THEN
+	jedzeniePozycjaY:=((jedzeniePozycjaY+wiersz) MOD 10)+1;
+END_IF
+IF jedzeniePozycjaX =wiersz OR jedzeniePozycjaY = kolumna THEN
+	jedzeniePozycjaX:=((jedzeniePozycjaX+8) MOD 10)+1;
+	jedzeniePozycjaY:=((jedzeniePozycjaX*jedzeniePozycjaY*iLicznikPrendkosci) MOD 10)+1; 
+END_IF
+poleGry.MacierzPola[jedzeniePozycjaY][jedzeniePozycjaX]:=TRUE;
+StanJedzenia:=TRUE;]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="M_NowaGra" Id="{ab4a8c2d-5e84-4607-b7a3-15dfdf1bccdd}">
+      <Declaration><![CDATA[METHOD M_NowaGra : BOOL
+VAR
+	i: INT;
+	x: INT;
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[	poleGry.MacierzPola[jedzeniePozycjaY][jedzeniePozycjaX]:=FALSE;	
+	GAMEOVER:=FALSE;													//wyłączenie informacji o przegranej grze
+	IF iLicnikPunktow>GVL_Lista.iRekord THEN
+		GVL_Lista.iRekord:=iLicnikPunktow;								// zapisanie liczby uzyskanych punktów
+	END_IF
+	FOR i:=1 TO 10 DO
+		FOR x:=1 TO 10 DO
+			poleGry.MacierzPola[x][i]:=FALSE;							// wyłączenie wszystkich pól
+		END_FOR
+	END_FOR
+	IF GVL_Lista.bStanPrzyciskuRestart=TRUE THEN						//To samo co w przypadku metody M_Start
+		THIS^.kolumna:=5;
+		THIS^.wiersz:=6;
+		THIS^.iWektorOgonaX[2]:=kolumna;
+		THIS^.iWektorOgonaY[2]:=wiersz;
+		THIS^.iLicznikY:=2;
+		THIS^.kierunek:=0;
+		THIS^.iLicnikPunktow:=1;
+		THIS^.GAMEOVER:=TRUE;
+		THIS^.iLicznikPrendkosci:=1;
+		THIS^.stanJedzenia:=FALSE;
+		THIS^.stanGry:=0;
+	END_IF
+	]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="M_Ogon" Id="{ea3cc6af-7f3a-474d-a684-7da53207cf11}">
+      <Declaration><![CDATA[METHOD M_Ogon : BOOL
+VAR
+	//petla 1
+	i:INT;
+	x:INT;
+	licznikOgona:INT;
+	
+	//liczenie co co skasowac
+	q:INT;
+	w:INT;
+	
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[FOR i:=1 TO 10 DO
+	FOR x:=1 TO 10 DO
+		IF poleGry.MacierzPola[x][i]=TRUE THEN			
+			licznikOgona:=licznikOgona+1;				//Pętal sprawdzająca czy długość = liczba punktów kiedy zdobędziemy punkt zwieksza długość
+		END_IF
+	END_FOR
+END_FOR
+
+IF (licznikOgona-1)>=iLicnikPunktow THEN
+	q:=iWektorOgonaY[iLicznikY-(iLicnikPunktow-1)];	
+	w:=iWektorOgonaX[iLicznikY-(iLicnikPunktow-1)];
+	poleGry.MacierzPola[q][w]:=FALSE;					//usuwanie końca ogona
+END_IF
+
+
+]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="M_SprawdzanieKolizji" Id="{9e87a71a-75a5-459c-b349-562cf7ce5c7a}">
+      <Declaration><![CDATA[METHOD M_SprawdzanieKolizji : BOOL
+VAR
+	
+	x:INT;
+	
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[FOR x:=(iLicznikY-(iLicnikPunktow-1)) TO iLicznikY DO
+	IF kierunek>0 THEN
+			IF iWektorOgonaY[x]=kolumna AND iWektorOgonaX[x]=wiersz THEN	//jeżeli obecny stan kolumny i wierszu jest równy stanowi poprzedniemu -n to...
+				stanGry:=2;													//to zmień stan gry
+			END_IF
+	END_IF
+END_FOR]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="M_Start" Id="{0c866838-f915-49db-ab4d-a12a741af533}">
+      <Declaration><![CDATA[METHOD M_Start : BOOL
+VAR_INPUT
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[										//parametry zmiennych potrzebe przy starcie
+	THIS^.kolumna:=6;  					//kolumna startowa
+	THIS^.wiersz:=5;					//wiersz startowy
+	THIS^.iWektorOgonaX[2]:=kolumna;	//macierz zapamiętujaca poprzednie stany
+	THIS^.iWektorOgonaY[2]:=wiersz;
+	THIS^.iLicznikPrendkosci:=1;		//restart prędkości
+	THIS^.stanJedzenia:=FALSE;			//zmienna uruchamiająca proces tworzenia 'jedzenia dla wężyka'
+	THIS^.EKRANSTARTOWY:=TRUE;			//wyłaczenie komunikatu
+	THIS^.stanGry:=0;					//zmeina stanu programu]]></ST>
+      </Implementation>
+    </Method>
+    <LineIds Name="FB_Snake">
+      <LineId Id="46" Count="0" />
+      <LineId Id="56" Count="0" />
+      <LineId Id="59" Count="0" />
+      <LineId Id="288" Count="2" />
+      <LineId Id="463" Count="0" />
+      <LineId Id="465" Count="1" />
+      <LineId Id="469" Count="1" />
+      <LineId Id="468" Count="0" />
+      <LineId Id="473" Count="1" />
+      <LineId Id="472" Count="0" />
+      <LineId Id="476" Count="1" />
+      <LineId Id="475" Count="0" />
+      <LineId Id="291" Count="0" />
+      <LineId Id="287" Count="0" />
+      <LineId Id="286" Count="0" />
+      <LineId Id="294" Count="0" />
+      <LineId Id="297" Count="1" />
+      <LineId Id="293" Count="0" />
+      <LineId Id="154" Count="0" />
+      <LineId Id="258" Count="0" />
+      <LineId Id="121" Count="0" />
+      <LineId Id="398" Count="0" />
+      <LineId Id="324" Count="0" />
+      <LineId Id="397" Count="0" />
+      <LineId Id="399" Count="0" />
+      <LineId Id="123" Count="0" />
+      <LineId Id="203" Count="0" />
+      <LineId Id="244" Count="0" />
+      <LineId Id="401" Count="1" />
+      <LineId Id="400" Count="0" />
+      <LineId Id="192" Count="0" />
+      <LineId Id="326" Count="0" />
+      <LineId Id="124" Count="0" />
+      <LineId Id="196" Count="0" />
+      <LineId Id="128" Count="0" />
+      <LineId Id="404" Count="1" />
+      <LineId Id="403" Count="0" />
+      <LineId Id="185" Count="0" />
+      <LineId Id="325" Count="0" />
+      <LineId Id="171" Count="0" />
+      <LineId Id="409" Count="0" />
+      <LineId Id="131" Count="0" />
+      <LineId Id="407" Count="1" />
+      <LineId Id="406" Count="0" />
+      <LineId Id="180" Count="0" />
+      <LineId Id="327" Count="0" />
+      <LineId Id="130" Count="0" />
+      <LineId Id="220" Count="0" />
+      <LineId Id="172" Count="0" />
+      <LineId Id="225" Count="0" />
+      <LineId Id="223" Count="1" />
+      <LineId Id="222" Count="0" />
+      <LineId Id="141" Count="0" />
+      <LineId Id="71" Count="0" />
+      <LineId Id="142" Count="1" />
+      <LineId Id="63" Count="0" />
+      <LineId Id="329" Count="0" />
+      <LineId Id="255" Count="0" />
+      <LineId Id="162" Count="0" />
+      <LineId Id="279" Count="2" />
+      <LineId Id="299" Count="0" />
+      <LineId Id="305" Count="0" />
+      <LineId Id="316" Count="0" />
+      <LineId Id="304" Count="0" />
+      <LineId Id="160" Count="1" />
+      <LineId Id="58" Count="0" />
+      <LineId Id="77" Count="0" />
+      <LineId Id="79" Count="0" />
+      <LineId Id="432" Count="0" />
+      <LineId Id="86" Count="0" />
+      <LineId Id="82" Count="0" />
+      <LineId Id="267" Count="2" />
+      <LineId Id="57" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_Snake.M_GenerowanieJedzenia">
+      <LineId Id="22" Count="0" />
+      <LineId Id="21" Count="0" />
+      <LineId Id="23" Count="2" />
+      <LineId Id="19" Count="0" />
+      <LineId Id="26" Count="4" />
+      <LineId Id="32" Count="0" />
+      <LineId Id="31" Count="0" />
+      <LineId Id="13" Count="0" />
+      <LineId Id="7" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_Snake.M_NowaGra">
+      <LineId Id="6" Count="15" />
+      <LineId Id="23" Count="5" />
+      <LineId Id="5" Count="0" />
+      <LineId Id="29" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_Snake.M_Ogon">
+      <LineId Id="6" Count="0" />
+      <LineId Id="12" Count="0" />
+      <LineId Id="16" Count="2" />
+      <LineId Id="15" Count="0" />
+      <LineId Id="13" Count="0" />
+      <LineId Id="21" Count="0" />
+      <LineId Id="20" Count="0" />
+      <LineId Id="82" Count="2" />
+      <LineId Id="23" Count="0" />
+      <LineId Id="8" Count="1" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_Snake.M_SprawdzanieKolizji">
+      <LineId Id="5" Count="0" />
+      <LineId Id="13" Count="0" />
+      <LineId Id="17" Count="1" />
+      <LineId Id="15" Count="1" />
+      <LineId Id="10" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_Snake.M_Start">
+      <LineId Id="6" Count="0" />
+      <LineId Id="16" Count="0" />
+      <LineId Id="7" Count="5" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

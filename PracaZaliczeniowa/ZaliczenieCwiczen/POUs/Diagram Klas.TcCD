@@ -1,0 +1,1494 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
+  <ClassDiagram Name="Diagram Klas" Id="{e6a55f7a-463a-4877-a4ad-4c39bbde80d3}">
+    <XmlArchive>
+      <Data>
+        <o xml:space="preserve" t="ClassDiagram">
+          <n n="BreakPointGuids" />
+          <v n="IsActionRemoving">false</v>
+          <v n="ForceRepaintDiagram">false</v>
+          <v n="Documentationdiagram">false</v>
+          <v n="ApplicationGuidForDiagram">{a0f71a6d-82f1-4231-a2f8-2cbb483a1c76}</v>
+          <v n="AutomaticLayOutHeightSpace">100</v>
+          <v n="AutomaticLayOutWidthSpace">150</v>
+          <d n="ElementObjects" t="Hashtable" ckt="Guid" cvt="ClassDiagramElement">
+            <v>e989c6cf-27f3-4e2a-ba88-592c4c5f81ad</v>
+            <o>
+              <v n="DocumenationName">"GVL_Lista"</v>
+              <n n="AttributeTrigger" />
+              <v n="ExcludedFromBuild">false</v>
+              <v n="PropertiesLoaded">false</v>
+              <d n="Properties" t="Hashtable" />
+              <l n="AttributesArray" t="ArrayList" cet="UMLElementAttribute">
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"iNajWynik"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"INT"</v>
+                  <v n="AttributeParent">{e989c6cf-27f3-4e2a-ba88-592c4c5f81ad}</v>
+                  <v n="AttributeObjectGuid">{f2786ad3-8db0-4672-8ff9-465a6740491b}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"iObecnyWynik"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"INT"</v>
+                  <v n="AttributeParent">{e989c6cf-27f3-4e2a-ba88-592c4c5f81ad}</v>
+                  <v n="AttributeObjectGuid">{01e8d545-874c-4d10-955f-1fe591f21220}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"bStanGry"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"BOOL"</v>
+                  <v n="AttributeParent">{e989c6cf-27f3-4e2a-ba88-592c4c5f81ad}</v>
+                  <v n="AttributeObjectGuid">{8784b9ba-3460-4134-8d9e-e7c11e5e83e8}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"bStanStrzalek"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"ARRAY [1..4] OF BOOL"</v>
+                  <v n="AttributeParent">{e989c6cf-27f3-4e2a-ba88-592c4c5f81ad}</v>
+                  <v n="AttributeObjectGuid">{cd5c1d4f-bf9d-4e0b-aa70-82a9a10ebf5d}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"bStanPrzyciskuRestart"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"BOOL"</v>
+                  <v n="AttributeParent">{e989c6cf-27f3-4e2a-ba88-592c4c5f81ad}</v>
+                  <v n="AttributeObjectGuid">{72b46d8e-6322-451d-8db1-ee3c8d022cdc}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"bStanPRzyciskuStartu"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"BOOL"</v>
+                  <v n="AttributeParent">{e989c6cf-27f3-4e2a-ba88-592c4c5f81ad}</v>
+                  <v n="AttributeObjectGuid">{afadf4c2-9dc0-4f3d-b99f-4bead968e835}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"iRekord"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"INT"</v>
+                  <v n="AttributeParent">{e989c6cf-27f3-4e2a-ba88-592c4c5f81ad}</v>
+                  <v n="AttributeObjectGuid">{f1b6e7bd-7530-47c7-9dd9-98b3b425445b}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+              </l>
+              <v n="PropertyID">-1</v>
+              <v n="MethodsLoaded">false</v>
+              <d n="MethodList" t="Hashtable" />
+              <v n="MethodID">-1</v>
+              <v n="ActivityID">-1</v>
+              <v n="IecObjectSemantic">4</v>
+              <d n="MethodStereotypContainer" t="Hashtable" />
+              <o n="ElementVisualisation" t="ClassElementVisualisation">
+                <v n="ShowAttributes">true</v>
+                <v n="ShowMethods">false</v>
+                <a n="DockingPopulation" cet="Int32">AAAAAAAAAAAAAAAAAAAAAA==</a>
+                <v n="ColumnIndex">0</v>
+                <v n="RowIndex">3</v>
+                <v n="RepresentedElement">6</v>
+                <v n="IsElementVisible">true</v>
+                <v n="TopPosition">500</v>
+                <v n="LeftPosition">420</v>
+                <v n="WidthValue">269</v>
+                <v n="MinWidthValue">0</v>
+                <v n="Height">170</v>
+                <v n="MinHeight">0</v>
+                <v n="AutomaticLayout">true</v>
+                <d n="DockingPoints" t="Hashtable" />
+              </o>
+              <n n="StereotypeContainer" />
+              <v n="LibraryPath">""</v>
+              <v n="ObjectGuid">{e989c6cf-27f3-4e2a-ba88-592c4c5f81ad}</v>
+              <v n="HasGraphicalRepresentation">true</v>
+              <v n="bIsVisualisationChanged">false</v>
+              <v n="IsType" t="UMLType">UMLClassElement</v>
+              <v n="_MaxDoCycleCalls" t="Int16">32767</v>
+              <v n="DefaultCellSizeX">70</v>
+              <v n="DefaultCellSizeY">47</v>
+              <v n="IsDocumentation">false</v>
+              <v n="Area">{00000000-0000-0000-0000-000000000000}</v>
+              <v n="ParsedMethods">false</v>
+              <v n="ParsedProperties">false</v>
+              <v n="GeneratorId">0</v>
+              <v n="UserDefined">true</v>
+              <v n="ElementID">6</v>
+              <v n="ElementObjectGuid">{e989c6cf-27f3-4e2a-ba88-592c4c5f81ad}</v>
+              <v n="ParentGuid">{00000000-0000-0000-0000-000000000000}</v>
+              <v n="ContainerGuid">{00000000-0000-0000-0000-000000000000}</v>
+              <v n="ShowedStereotype">{00000000-0000-0000-0000-000000000000}</v>
+              <v n="ReplacewithImage">false</v>
+              <v n="AutomaticLayout">false</v>
+              <v n="PositionCounter">1L</v>
+              <v n="UMLPosition">-1L</v>
+              <v n="IsModified">false</v>
+              <v n="ARGBElementColor">0</v>
+              <v n="ZOrder">24U</v>
+            </o>
+            <v>a27e1feb-095a-4e74-999e-39e516c03d4f</v>
+            <o>
+              <v n="DocumenationName">"E_kierunek"</v>
+              <n n="AttributeTrigger" />
+              <v n="ExcludedFromBuild">false</v>
+              <v n="PropertiesLoaded">false</v>
+              <d n="Properties" t="Hashtable" />
+              <l n="AttributesArray" t="ArrayList" cet="UMLElementAttribute">
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"lewo"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"E_KIERUNEK"</v>
+                  <v n="AttributeParent">{a27e1feb-095a-4e74-999e-39e516c03d4f}</v>
+                  <v n="AttributeObjectGuid">{a41dea3b-b82d-4a7a-93aa-8334475520fa}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"dol"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"E_KIERUNEK"</v>
+                  <v n="AttributeParent">{a27e1feb-095a-4e74-999e-39e516c03d4f}</v>
+                  <v n="AttributeObjectGuid">{5652acd5-079e-4e5e-b941-3186881b585b}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"prawo"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"E_KIERUNEK"</v>
+                  <v n="AttributeParent">{a27e1feb-095a-4e74-999e-39e516c03d4f}</v>
+                  <v n="AttributeObjectGuid">{10a24789-81c3-458a-b7ce-f00ba915b1bb}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"gora"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"E_KIERUNEK"</v>
+                  <v n="AttributeParent">{a27e1feb-095a-4e74-999e-39e516c03d4f}</v>
+                  <v n="AttributeObjectGuid">{865b7991-f298-4446-ae3b-65161279ff9e}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+              </l>
+              <v n="PropertyID">-1</v>
+              <v n="MethodsLoaded">false</v>
+              <d n="MethodList" t="Hashtable" />
+              <v n="MethodID">-1</v>
+              <v n="ActivityID">-1</v>
+              <v n="IecObjectSemantic">7</v>
+              <d n="MethodStereotypContainer" t="Hashtable" />
+              <o n="ElementVisualisation" t="ClassElementVisualisation">
+                <v n="ShowAttributes">true</v>
+                <v n="ShowMethods">false</v>
+                <a n="DockingPopulation" cet="Int32">AAAAAAAAAAAAAAAAAQAAAA==</a>
+                <v n="ColumnIndex">1</v>
+                <v n="RowIndex">2</v>
+                <v n="RepresentedElement">5</v>
+                <v n="IsElementVisible">true</v>
+                <v n="TopPosition">460</v>
+                <v n="LeftPosition">730</v>
+                <v n="WidthValue">100</v>
+                <v n="MinWidthValue">0</v>
+                <v n="Height">119</v>
+                <v n="MinHeight">0</v>
+                <v n="AutomaticLayout">true</v>
+                <d n="DockingPoints" t="Hashtable" />
+              </o>
+              <n n="StereotypeContainer" />
+              <v n="LibraryPath">""</v>
+              <v n="ObjectGuid">{a27e1feb-095a-4e74-999e-39e516c03d4f}</v>
+              <v n="HasGraphicalRepresentation">true</v>
+              <v n="bIsVisualisationChanged">false</v>
+              <v n="IsType" t="UMLType">UMLEnumElement</v>
+              <v n="_MaxDoCycleCalls" t="Int16">32767</v>
+              <v n="DefaultCellSizeX">102</v>
+              <v n="DefaultCellSizeY">67</v>
+              <v n="IsDocumentation">false</v>
+              <v n="Area">{00000000-0000-0000-0000-000000000000}</v>
+              <v n="ParsedMethods">false</v>
+              <v n="ParsedProperties">false</v>
+              <v n="GeneratorId">0</v>
+              <v n="UserDefined">true</v>
+              <v n="ElementID">5</v>
+              <v n="ElementObjectGuid">{a27e1feb-095a-4e74-999e-39e516c03d4f}</v>
+              <v n="ParentGuid">{00000000-0000-0000-0000-000000000000}</v>
+              <v n="ContainerGuid">{00000000-0000-0000-0000-000000000000}</v>
+              <v n="ShowedStereotype">{00000000-0000-0000-0000-000000000000}</v>
+              <v n="ReplacewithImage">false</v>
+              <v n="AutomaticLayout">false</v>
+              <v n="PositionCounter">1L</v>
+              <v n="UMLPosition">-1L</v>
+              <v n="IsModified">false</v>
+              <v n="ARGBElementColor">0</v>
+              <v n="ZOrder">23U</v>
+            </o>
+            <v>003304d9-0937-481e-94b7-806557916c6d</v>
+            <o>
+              <v n="DocumenationName">"MAIN"</v>
+              <n n="AttributeTrigger" />
+              <v n="ExcludedFromBuild">false</v>
+              <v n="PropertiesLoaded">false</v>
+              <d n="Properties" t="Hashtable" />
+              <l n="AttributesArray" t="ArrayList" cet="UMLElementAttribute">
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"ObranPoczatkowy"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"FB_Glowny"</v>
+                  <v n="AttributeParent">{003304d9-0937-481e-94b7-806557916c6d}</v>
+                  <v n="AttributeObjectGuid">{6a5f1e8e-b807-45bd-9a61-bf0bd8aeb603}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"gra"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"FB_Snake"</v>
+                  <v n="AttributeParent">{003304d9-0937-481e-94b7-806557916c6d}</v>
+                  <v n="AttributeObjectGuid">{2e3457a7-c28f-4b39-b933-335790176cb5}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+              </l>
+              <v n="PropertyID">-1</v>
+              <v n="MethodsLoaded">false</v>
+              <d n="MethodList" t="Hashtable" />
+              <v n="MethodID">-1</v>
+              <v n="ActivityID">-1</v>
+              <v n="IecObjectSemantic">1</v>
+              <d n="MethodStereotypContainer" t="Hashtable" />
+              <o n="ElementVisualisation" t="ClassElementVisualisation">
+                <v n="ShowAttributes">false</v>
+                <v n="ShowMethods">false</v>
+                <a n="DockingPopulation" cet="Int32">AAAAAAAAAAAAAAAAAAAAAA==</a>
+                <v n="ColumnIndex">0</v>
+                <v n="RowIndex">0</v>
+                <v n="RepresentedElement">1</v>
+                <v n="IsElementVisible">true</v>
+                <v n="TopPosition">42</v>
+                <v n="LeftPosition">10</v>
+                <v n="WidthValue">100</v>
+                <v n="MinWidthValue">0</v>
+                <v n="Height">75</v>
+                <v n="MinHeight">0</v>
+                <v n="AutomaticLayout">true</v>
+                <d n="DockingPoints" t="Hashtable" />
+              </o>
+              <n n="StereotypeContainer" />
+              <v n="LibraryPath">""</v>
+              <v n="ObjectGuid">{003304d9-0937-481e-94b7-806557916c6d}</v>
+              <v n="HasGraphicalRepresentation">true</v>
+              <v n="bIsVisualisationChanged">false</v>
+              <v n="IsType" t="UMLType">UMLClassElement</v>
+              <v n="_MaxDoCycleCalls" t="Int16">32767</v>
+              <v n="DefaultCellSizeX">70</v>
+              <v n="DefaultCellSizeY">47</v>
+              <v n="IsDocumentation">false</v>
+              <v n="Area">{00000000-0000-0000-0000-000000000000}</v>
+              <v n="ParsedMethods">false</v>
+              <v n="ParsedProperties">false</v>
+              <v n="GeneratorId">0</v>
+              <v n="UserDefined">true</v>
+              <v n="ElementID">1</v>
+              <v n="ElementObjectGuid">{003304d9-0937-481e-94b7-806557916c6d}</v>
+              <v n="ParentGuid">{00000000-0000-0000-0000-000000000000}</v>
+              <v n="ContainerGuid">{00000000-0000-0000-0000-000000000000}</v>
+              <v n="ShowedStereotype">{00000000-0000-0000-0000-000000000000}</v>
+              <v n="ReplacewithImage">false</v>
+              <v n="AutomaticLayout">true</v>
+              <v n="PositionCounter">1L</v>
+              <v n="UMLPosition">-1L</v>
+              <v n="IsModified">false</v>
+              <v n="ARGBElementColor">0</v>
+              <v n="ZOrder">11U</v>
+            </o>
+            <v>12d3453c-e68a-4d1f-ae44-22ee6a2954e9</v>
+            <o>
+              <v n="DocumenationName">"FB_Glowny"</v>
+              <n n="AttributeTrigger" />
+              <v n="ExcludedFromBuild">false</v>
+              <v n="PropertiesLoaded">false</v>
+              <d n="Properties" t="Hashtable" />
+              <l n="AttributesArray" t="ArrayList" cet="UMLElementAttribute">
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"iRuchX"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"INT"</v>
+                  <v n="AttributeParent">{12d3453c-e68a-4d1f-ae44-22ee6a2954e9}</v>
+                  <v n="AttributeObjectGuid">{bf19516b-4b60-486c-99d5-ca4b05f3786a}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"iRuchY"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"INT"</v>
+                  <v n="AttributeParent">{12d3453c-e68a-4d1f-ae44-22ee6a2954e9}</v>
+                  <v n="AttributeObjectGuid">{a9364b65-09b3-4610-b248-2e5f4039f5ee}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"predkoscRuchu"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"TIME"</v>
+                  <v n="AttributeParent">{12d3453c-e68a-4d1f-ae44-22ee6a2954e9}</v>
+                  <v n="AttributeObjectGuid">{15c7d476-2d31-4928-ab9c-c4c9d2d47f09}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"czasoOdmierzacz"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"TON"</v>
+                  <v n="AttributeParent">{12d3453c-e68a-4d1f-ae44-22ee6a2954e9}</v>
+                  <v n="AttributeObjectGuid">{61a315cf-645a-413a-9719-8907cf4ea1d8}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"timerRuchu"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"TON"</v>
+                  <v n="AttributeParent">{12d3453c-e68a-4d1f-ae44-22ee6a2954e9}</v>
+                  <v n="AttributeObjectGuid">{428d78d0-5e7b-4965-bc7f-a64d162add74}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"iStan"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"INT"</v>
+                  <v n="AttributeParent">{12d3453c-e68a-4d1f-ae44-22ee6a2954e9}</v>
+                  <v n="AttributeObjectGuid">{01abddff-0228-4e37-98d2-d727d1be35cc}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+              </l>
+              <v n="PropertyID">-1</v>
+              <v n="MethodsLoaded">false</v>
+              <d n="MethodList" t="Hashtable" />
+              <v n="MethodID">-1</v>
+              <v n="ActivityID">-1</v>
+              <v n="IecObjectSemantic">2</v>
+              <d n="MethodStereotypContainer" t="Hashtable" />
+              <o n="ElementVisualisation" t="ClassElementVisualisation">
+                <v n="ShowAttributes">true</v>
+                <v n="ShowMethods">false</v>
+                <a n="DockingPopulation" cet="Int32">AAAAAAAAAAAAAAAAAAAAAA==</a>
+                <v n="ColumnIndex">1</v>
+                <v n="RowIndex">1</v>
+                <v n="RepresentedElement">3</v>
+                <v n="IsElementVisible">true</v>
+                <v n="TopPosition">40</v>
+                <v n="LeftPosition">670</v>
+                <v n="WidthValue">155</v>
+                <v n="MinWidthValue">0</v>
+                <v n="Height">143</v>
+                <v n="MinHeight">0</v>
+                <v n="AutomaticLayout">true</v>
+                <d n="DockingPoints" t="Hashtable" />
+              </o>
+              <n n="StereotypeContainer" />
+              <v n="LibraryPath">""</v>
+              <v n="ObjectGuid">{12d3453c-e68a-4d1f-ae44-22ee6a2954e9}</v>
+              <v n="HasGraphicalRepresentation">true</v>
+              <v n="bIsVisualisationChanged">false</v>
+              <v n="IsType" t="UMLType">UMLClassElement</v>
+              <v n="_MaxDoCycleCalls" t="Int16">32767</v>
+              <v n="DefaultCellSizeX">70</v>
+              <v n="DefaultCellSizeY">47</v>
+              <v n="IsDocumentation">false</v>
+              <v n="Area">{00000000-0000-0000-0000-000000000000}</v>
+              <v n="ParsedMethods">false</v>
+              <v n="ParsedProperties">false</v>
+              <v n="GeneratorId">0</v>
+              <v n="UserDefined">true</v>
+              <v n="ElementID">3</v>
+              <v n="ElementObjectGuid">{12d3453c-e68a-4d1f-ae44-22ee6a2954e9}</v>
+              <v n="ParentGuid">{00000000-0000-0000-0000-000000000000}</v>
+              <v n="ContainerGuid">{00000000-0000-0000-0000-000000000000}</v>
+              <v n="ShowedStereotype">{00000000-0000-0000-0000-000000000000}</v>
+              <v n="ReplacewithImage">false</v>
+              <v n="AutomaticLayout">false</v>
+              <v n="PositionCounter">1L</v>
+              <v n="UMLPosition">-1L</v>
+              <v n="IsModified">false</v>
+              <v n="ARGBElementColor">0</v>
+              <v n="ZOrder">31U</v>
+            </o>
+            <v>25a6e70c-d6b6-4e4c-b5cd-a7be8fa3a0e4</v>
+            <o>
+              <v n="DocumenationName">"S_Macierz"</v>
+              <n n="AttributeTrigger" />
+              <v n="ExcludedFromBuild">false</v>
+              <v n="PropertiesLoaded">false</v>
+              <d n="Properties" t="Hashtable" />
+              <l n="AttributesArray" t="ArrayList" cet="UMLElementAttribute">
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"MacierzPola"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"ARRAY [1..10] OF ARRAY [1..10] OF BOOL"</v>
+                  <v n="AttributeParent">{25a6e70c-d6b6-4e4c-b5cd-a7be8fa3a0e4}</v>
+                  <v n="AttributeObjectGuid">{d13c2157-0fc0-458a-9b25-041c69b01726}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+              </l>
+              <v n="PropertyID">-1</v>
+              <v n="MethodsLoaded">false</v>
+              <d n="MethodList" t="Hashtable" />
+              <v n="MethodID">-1</v>
+              <v n="ActivityID">-1</v>
+              <v n="IecObjectSemantic">6</v>
+              <d n="MethodStereotypContainer" t="Hashtable" />
+              <o n="ElementVisualisation" t="ClassElementVisualisation">
+                <v n="ShowAttributes">true</v>
+                <v n="ShowMethods">false</v>
+                <a n="DockingPopulation" cet="Int32">AAAAAAAAAAAAAAAAAAAAAA==</a>
+                <v n="ColumnIndex">0</v>
+                <v n="RowIndex">2</v>
+                <v n="RepresentedElement">4</v>
+                <v n="IsElementVisible">true</v>
+                <v n="TopPosition">570</v>
+                <v n="LeftPosition">20</v>
+                <v n="WidthValue">317</v>
+                <v n="MinWidthValue">0</v>
+                <v n="Height">68</v>
+                <v n="MinHeight">0</v>
+                <v n="AutomaticLayout">true</v>
+                <d n="DockingPoints" t="Hashtable" />
+              </o>
+              <n n="StereotypeContainer" />
+              <v n="LibraryPath">""</v>
+              <v n="ObjectGuid">{25a6e70c-d6b6-4e4c-b5cd-a7be8fa3a0e4}</v>
+              <v n="HasGraphicalRepresentation">true</v>
+              <v n="bIsVisualisationChanged">false</v>
+              <v n="IsType" t="UMLType">UMLStructElement</v>
+              <v n="_MaxDoCycleCalls" t="Int16">32767</v>
+              <v n="DefaultCellSizeX">81</v>
+              <v n="DefaultCellSizeY">57</v>
+              <v n="IsDocumentation">false</v>
+              <v n="Area">{00000000-0000-0000-0000-000000000000}</v>
+              <v n="ParsedMethods">false</v>
+              <v n="ParsedProperties">false</v>
+              <v n="GeneratorId">0</v>
+              <v n="UserDefined">true</v>
+              <v n="ElementID">4</v>
+              <v n="ElementObjectGuid">{25a6e70c-d6b6-4e4c-b5cd-a7be8fa3a0e4}</v>
+              <v n="ParentGuid">{00000000-0000-0000-0000-000000000000}</v>
+              <v n="ContainerGuid">{00000000-0000-0000-0000-000000000000}</v>
+              <v n="ShowedStereotype">{00000000-0000-0000-0000-000000000000}</v>
+              <v n="ReplacewithImage">false</v>
+              <v n="AutomaticLayout">false</v>
+              <v n="PositionCounter">1L</v>
+              <v n="UMLPosition">-1L</v>
+              <v n="IsModified">false</v>
+              <v n="ARGBElementColor">0</v>
+              <v n="ZOrder">25U</v>
+            </o>
+            <v>31d2fabe-7c50-423b-aa7d-c8ea19a5f486</v>
+            <o>
+              <v n="DocumenationName">"FB_Snake"</v>
+              <n n="AttributeTrigger" />
+              <v n="ExcludedFromBuild">false</v>
+              <v n="PropertiesLoaded">false</v>
+              <d n="Properties" t="Hashtable" />
+              <l n="AttributesArray" t="ArrayList" cet="UMLElementAttribute">
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"poleGry"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"S_Macierz"</v>
+                  <v n="AttributeParent">{31d2fabe-7c50-423b-aa7d-c8ea19a5f486}</v>
+                  <v n="AttributeObjectGuid">{61d9441d-8006-4df0-b4bd-93108c2cbbf9}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"wiersz"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"INT"</v>
+                  <v n="AttributeParent">{31d2fabe-7c50-423b-aa7d-c8ea19a5f486}</v>
+                  <v n="AttributeObjectGuid">{25c3a84e-55eb-47a2-84fe-d38a0aff2b4d}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"kolumna"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"INT"</v>
+                  <v n="AttributeParent">{31d2fabe-7c50-423b-aa7d-c8ea19a5f486}</v>
+                  <v n="AttributeObjectGuid">{2d3a23b4-a565-44bc-ae28-c2f4c239a8e6}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"stanGry"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"INT"</v>
+                  <v n="AttributeParent">{31d2fabe-7c50-423b-aa7d-c8ea19a5f486}</v>
+                  <v n="AttributeObjectGuid">{a72a245b-93b2-446e-83bf-28d2ab2da07f}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"iLicznikPrendkosci"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"INT"</v>
+                  <v n="AttributeParent">{31d2fabe-7c50-423b-aa7d-c8ea19a5f486}</v>
+                  <v n="AttributeObjectGuid">{daeab563-3ee3-40f2-b9e1-ad0b1728ec74}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"GAMEOVER"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"BOOL"</v>
+                  <v n="AttributeParent">{31d2fabe-7c50-423b-aa7d-c8ea19a5f486}</v>
+                  <v n="AttributeObjectGuid">{3d0fd482-016b-4f1e-a017-a64681bbd4b4}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"EKRANSTARTOWY"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"BOOL"</v>
+                  <v n="AttributeParent">{31d2fabe-7c50-423b-aa7d-c8ea19a5f486}</v>
+                  <v n="AttributeObjectGuid">{f8cc0d50-adfa-48a6-a49a-1d1b66556f31}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"kierunek"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"INT"</v>
+                  <v n="AttributeParent">{31d2fabe-7c50-423b-aa7d-c8ea19a5f486}</v>
+                  <v n="AttributeObjectGuid">{495ce6f0-f24e-4b46-8666-5c64787a868f}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"iLicznikKierunku"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"INT"</v>
+                  <v n="AttributeParent">{31d2fabe-7c50-423b-aa7d-c8ea19a5f486}</v>
+                  <v n="AttributeObjectGuid">{b3c72428-8648-42d5-b4c0-da08a1689291}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"kierunekRuchu"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"E_kierunek"</v>
+                  <v n="AttributeParent">{31d2fabe-7c50-423b-aa7d-c8ea19a5f486}</v>
+                  <v n="AttributeObjectGuid">{5fc04b20-bc32-434e-ac8d-d1ffe2c9b035}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"stanJedzenia"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"BOOL"</v>
+                  <v n="AttributeParent">{31d2fabe-7c50-423b-aa7d-c8ea19a5f486}</v>
+                  <v n="AttributeObjectGuid">{8d7d519f-f632-4798-984e-2d7b4904511e}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"jedzeniePozycjaX"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"INT"</v>
+                  <v n="AttributeParent">{31d2fabe-7c50-423b-aa7d-c8ea19a5f486}</v>
+                  <v n="AttributeObjectGuid">{d4486a92-f445-4afd-899c-b7633e6ffc8e}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"jedzeniePozycjaY"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"INT"</v>
+                  <v n="AttributeParent">{31d2fabe-7c50-423b-aa7d-c8ea19a5f486}</v>
+                  <v n="AttributeObjectGuid">{b20682bc-6ae4-4f69-b8f6-f5711eb1b18c}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"iLicnikPunktow"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"INT"</v>
+                  <v n="AttributeParent">{31d2fabe-7c50-423b-aa7d-c8ea19a5f486}</v>
+                  <v n="AttributeObjectGuid">{07a870ce-1d18-49fb-ae70-def7b155ab66}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"iWektorOgonaX"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"ARRAY [2..400] OF INT"</v>
+                  <v n="AttributeParent">{31d2fabe-7c50-423b-aa7d-c8ea19a5f486}</v>
+                  <v n="AttributeObjectGuid">{2b4a7201-1950-40c8-82a7-1e3eaa0903c3}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"iWektorOgonaY"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"ARRAY [2..400] OF INT"</v>
+                  <v n="AttributeParent">{31d2fabe-7c50-423b-aa7d-c8ea19a5f486}</v>
+                  <v n="AttributeObjectGuid">{aa4aead1-d4cc-482e-ab67-f5d9d762d348}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+                <o>
+                  <v n="bIsAttribute">true</v>
+                  <v n="isInputVar">false</v>
+                  <v n="isOutputVar">false</v>
+                  <v n="isInoutVar">false</v>
+                  <v n="isLocalVar">true</v>
+                  <v n="bIsMethod">false</v>
+                  <v n="AttribtueName">"iLicznikY"</v>
+                  <v n="AttributeConstraint">""</v>
+                  <v n="AttributeReturnType">"INT"</v>
+                  <v n="AttributeParent">{31d2fabe-7c50-423b-aa7d-c8ea19a5f486}</v>
+                  <v n="AttributeObjectGuid">{95046914-4c7d-49d8-9be0-44b1e08f4a75}</v>
+                  <v n="AttributeStereotype">""</v>
+                </o>
+              </l>
+              <v n="PropertyID">-1</v>
+              <v n="MethodsLoaded">false</v>
+              <d n="MethodList" t="Hashtable" ckt="Guid" cvt="UMLElementMethod">
+                <v>c227e4b4-9052-4591-9ec6-42f23383027a</v>
+                <o>
+                  <v n="MethodName">"M_GenerowanieJedzenia"</v>
+                  <v n="MethodBreakPointActive">false</v>
+                  <v n="MethodReturnType">"BOOL"</v>
+                  <l n="MethodParameter" t="ArrayList" />
+                  <v n="MethodParent">{31d2fabe-7c50-423b-aa7d-c8ea19a5f486}</v>
+                  <v n="MethodObjectGuid">{c227e4b4-9052-4591-9ec6-42f23383027a}</v>
+                  <v n="MethodStereotype">""</v>
+                  <v n="MethodParameterLength">20</v>
+                  <v n="MethodParameterTooLong">false</v>
+                </o>
+                <v>0c866838-f915-49db-ab4d-a12a741af533</v>
+                <o>
+                  <v n="MethodName">"M_Start"</v>
+                  <v n="MethodBreakPointActive">false</v>
+                  <v n="MethodReturnType">"BOOL"</v>
+                  <l n="MethodParameter" t="ArrayList" />
+                  <v n="MethodParent">{31d2fabe-7c50-423b-aa7d-c8ea19a5f486}</v>
+                  <v n="MethodObjectGuid">{0c866838-f915-49db-ab4d-a12a741af533}</v>
+                  <v n="MethodStereotype">""</v>
+                  <v n="MethodParameterLength">20</v>
+                  <v n="MethodParameterTooLong">false</v>
+                </o>
+                <v>9e87a71a-75a5-459c-b349-562cf7ce5c7a</v>
+                <o>
+                  <v n="MethodName">"M_SprawdzanieKolizji"</v>
+                  <v n="MethodBreakPointActive">false</v>
+                  <v n="MethodReturnType">"BOOL"</v>
+                  <l n="MethodParameter" t="ArrayList" />
+                  <v n="MethodParent">{31d2fabe-7c50-423b-aa7d-c8ea19a5f486}</v>
+                  <v n="MethodObjectGuid">{9e87a71a-75a5-459c-b349-562cf7ce5c7a}</v>
+                  <v n="MethodStereotype">""</v>
+                  <v n="MethodParameterLength">20</v>
+                  <v n="MethodParameterTooLong">false</v>
+                </o>
+                <v>ea3cc6af-7f3a-474d-a684-7da53207cf11</v>
+                <o>
+                  <v n="MethodName">"M_Ogon"</v>
+                  <v n="MethodBreakPointActive">false</v>
+                  <v n="MethodReturnType">"BOOL"</v>
+                  <l n="MethodParameter" t="ArrayList" />
+                  <v n="MethodParent">{31d2fabe-7c50-423b-aa7d-c8ea19a5f486}</v>
+                  <v n="MethodObjectGuid">{ea3cc6af-7f3a-474d-a684-7da53207cf11}</v>
+                  <v n="MethodStereotype">""</v>
+                  <v n="MethodParameterLength">20</v>
+                  <v n="MethodParameterTooLong">false</v>
+                </o>
+                <v>ab4a8c2d-5e84-4607-b7a3-15dfdf1bccdd</v>
+                <o>
+                  <v n="MethodName">"M_NowaGra"</v>
+                  <v n="MethodBreakPointActive">false</v>
+                  <v n="MethodReturnType">"BOOL"</v>
+                  <l n="MethodParameter" t="ArrayList" />
+                  <v n="MethodParent">{31d2fabe-7c50-423b-aa7d-c8ea19a5f486}</v>
+                  <v n="MethodObjectGuid">{ab4a8c2d-5e84-4607-b7a3-15dfdf1bccdd}</v>
+                  <v n="MethodStereotype">""</v>
+                  <v n="MethodParameterLength">20</v>
+                  <v n="MethodParameterTooLong">false</v>
+                </o>
+              </d>
+              <v n="MethodID">-1</v>
+              <v n="ActivityID">-1</v>
+              <v n="IecObjectSemantic">2</v>
+              <d n="MethodStereotypContainer" t="Hashtable" />
+              <o n="ElementVisualisation" t="ClassElementVisualisation">
+                <v n="ShowAttributes">true</v>
+                <v n="ShowMethods">true</v>
+                <a n="DockingPopulation" cet="Int32">AAAAAAEAAAAAAAAAAAAAAA==</a>
+                <v n="ColumnIndex">0</v>
+                <v n="RowIndex">1</v>
+                <v n="RepresentedElement">2</v>
+                <v n="IsElementVisible">true</v>
+                <v n="TopPosition">120</v>
+                <v n="LeftPosition">140</v>
+                <v n="WidthValue">257</v>
+                <v n="MinWidthValue">0</v>
+                <v n="Height">411</v>
+                <v n="MinHeight">0</v>
+                <v n="AutomaticLayout">true</v>
+                <d n="DockingPoints" t="Hashtable" />
+              </o>
+              <n n="StereotypeContainer" />
+              <v n="LibraryPath">""</v>
+              <v n="ObjectGuid">{31d2fabe-7c50-423b-aa7d-c8ea19a5f486}</v>
+              <v n="HasGraphicalRepresentation">true</v>
+              <v n="bIsVisualisationChanged">false</v>
+              <v n="IsType" t="UMLType">UMLClassElement</v>
+              <v n="_MaxDoCycleCalls" t="Int16">32767</v>
+              <v n="DefaultCellSizeX">70</v>
+              <v n="DefaultCellSizeY">47</v>
+              <v n="IsDocumentation">false</v>
+              <v n="Area">{00000000-0000-0000-0000-000000000000}</v>
+              <v n="ParsedMethods">false</v>
+              <v n="ParsedProperties">false</v>
+              <v n="GeneratorId">0</v>
+              <v n="UserDefined">true</v>
+              <v n="ElementID">2</v>
+              <v n="ElementObjectGuid">{31d2fabe-7c50-423b-aa7d-c8ea19a5f486}</v>
+              <v n="ParentGuid">{00000000-0000-0000-0000-000000000000}</v>
+              <v n="ContainerGuid">{00000000-0000-0000-0000-000000000000}</v>
+              <v n="ShowedStereotype">{00000000-0000-0000-0000-000000000000}</v>
+              <v n="ReplacewithImage">false</v>
+              <v n="AutomaticLayout">false</v>
+              <v n="PositionCounter">1L</v>
+              <v n="UMLPosition">-1L</v>
+              <v n="IsModified">false</v>
+              <v n="ARGBElementColor">0</v>
+              <v n="ZOrder">27U</v>
+            </o>
+          </d>
+          <v n="FirstPaint">true</v>
+          <v n="NextElementID">6</v>
+          <d n="UMLRelationObjects" t="Hashtable" ckt="Guid" cvt="UMLRelation">
+            <v>1f401de2-43d4-4f29-a885-db715ef8216d</v>
+            <o>
+              <v n="HasGraphicalRepresentation">true</v>
+              <v n="StartUMLElement">{003304d9-0937-481e-94b7-806557916c6d}</v>
+              <v n="HighlightedLine">false</v>
+              <v n="ZOrder">31U</v>
+              <v n="SpecialHandling">false</v>
+              <v n="ActionLocalVariableName">""</v>
+              <v n="ActionParametersString">""</v>
+              <n n="ActionName" />
+              <v n="ActionText">""</v>
+              <v n="InjectedActionCode">""</v>
+              <v n="ActionTextLength">100</v>
+              <v n="ConditionText">"TRUE"</v>
+              <v n="LengthConditionText">100</v>
+              <v n="RelationID">7</v>
+              <v n="TriggerlessStatechartTransition">true</v>
+              <v n="EndUMLElement">{12d3453c-e68a-4d1f-ae44-22ee6a2954e9}</v>
+              <o n="UMLRelationVisualisation" t="UMLRelationVisualisation">
+                <v n="RelationID">{1f401de2-43d4-4f29-a885-db715ef8216d}</v>
+                <v n="FlagPosition" t="Double">0.5</v>
+                <d n="flagsX" t="Hashtable" ckt="String" cvt="Int32">
+                  <v>EndElement</v>
+                  <v>0</v>
+                </d>
+                <d n="flagsY" t="Hashtable" ckt="String" cvt="Int32">
+                  <v>EndElement</v>
+                  <v>0</v>
+                </d>
+                <o n="StartAnchor" t="UMLAnchorPoint">
+                  <v n="AnchorID">0</v>
+                  <v n="AnchorLeftPosition">105</v>
+                  <v n="AnchorTopPosition">47</v>
+                  <v n="AnchorRelationID">{1f401de2-43d4-4f29-a885-db715ef8216d}</v>
+                  <v n="StartAnchor">true</v>
+                  <v n="EndAnchor">false</v>
+                  <v n="AnchorDockedState" t="Docked">Right</v>
+                </o>
+                <o n="EndAnchor" t="UMLAnchorPoint">
+                  <v n="AnchorID">3</v>
+                  <v n="AnchorLeftPosition">665</v>
+                  <v n="AnchorTopPosition">65</v>
+                  <v n="AnchorRelationID">{1f401de2-43d4-4f29-a885-db715ef8216d}</v>
+                  <v n="StartAnchor">false</v>
+                  <v n="EndAnchor">true</v>
+                  <v n="AnchorDockedState" t="Docked">Left</v>
+                </o>
+                <v n="NextAnchorID">3</v>
+                <d n="AnchorPoints" t="Hashtable" ckt="Int32" cvt="UMLAnchorPoint">
+                  <v>2</v>
+                  <o>
+                    <v n="AnchorID">2</v>
+                    <v n="AnchorLeftPosition">345</v>
+                    <v n="AnchorTopPosition">65</v>
+                    <v n="AnchorRelationID">{1f401de2-43d4-4f29-a885-db715ef8216d}</v>
+                    <v n="StartAnchor">false</v>
+                    <v n="EndAnchor">false</v>
+                    <v n="AnchorDockedState" t="Docked">NotDocked</v>
+                  </o>
+                  <v>1</v>
+                  <o>
+                    <v n="AnchorID">1</v>
+                    <v n="AnchorLeftPosition">345</v>
+                    <v n="AnchorTopPosition">47</v>
+                    <v n="AnchorRelationID">{1f401de2-43d4-4f29-a885-db715ef8216d}</v>
+                    <v n="StartAnchor">false</v>
+                    <v n="EndAnchor">false</v>
+                    <v n="AnchorDockedState" t="Docked">NotDocked</v>
+                  </o>
+                </d>
+                <v n="RelationIsLinear">true</v>
+                <v n="RelationIsFreeHand">false</v>
+              </o>
+              <v n="ReferenceGuid">{1f401de2-43d4-4f29-a885-db715ef8216d}</v>
+              <v n="RelationGuid">{1f401de2-43d4-4f29-a885-db715ef8216d}</v>
+              <v n="RelationName">""</v>
+              <n n="RelationStereotypes" />
+              <v n="RelationType" t="RelationTypes">Composition</v>
+              <v n="IsReferenceTo">false</v>
+              <v n="StartElementArrowFlag" t="ArrowTypes">FilledDiamond</v>
+              <v n="Priority">1</v>
+              <v n="GeneratesCode">true</v>
+              <v n="StartElementShowArrow">true</v>
+              <v n="StartElementCardnality">""</v>
+              <v n="EndElementCardnality">"1"</v>
+              <v n="EndElementArrowFlag" t="ArrowTypes">Slim</v>
+              <v n="EndElementShowArrow">true</v>
+              <v n="StartElementRoleName">""</v>
+              <v n="EndElementRoleName">"ObranPoczatkowy"</v>
+              <v n="UserCreated">true</v>
+              <v n="GeneratedByCode">false</v>
+              <v n="AllowRoutingOptimisation">false</v>
+              <d n="flagTexts" t="Hashtable" />
+              <v n="Position">-1L</v>
+              <v n="PositionCounter">1L</v>
+              <v n="IsModified">false</v>
+              <v n="ARGBElementColor">0</v>
+            </o>
+            <v>bb127ae6-9b50-4855-9cfc-1ae5433688a4</v>
+            <o>
+              <v n="HasGraphicalRepresentation">true</v>
+              <v n="StartUMLElement">{31d2fabe-7c50-423b-aa7d-c8ea19a5f486}</v>
+              <v n="HighlightedLine">false</v>
+              <v n="ZOrder">0U</v>
+              <v n="SpecialHandling">false</v>
+              <v n="ActionLocalVariableName">""</v>
+              <v n="ActionParametersString">""</v>
+              <n n="ActionName" />
+              <v n="ActionText">""</v>
+              <v n="InjectedActionCode">""</v>
+              <v n="ActionTextLength">100</v>
+              <v n="ConditionText">"TRUE"</v>
+              <v n="LengthConditionText">100</v>
+              <v n="RelationID">32</v>
+              <v n="TriggerlessStatechartTransition">true</v>
+              <v n="EndUMLElement">{a27e1feb-095a-4e74-999e-39e516c03d4f}</v>
+              <o n="UMLRelationVisualisation" t="UMLRelationVisualisation">
+                <v n="RelationID">{bb127ae6-9b50-4855-9cfc-1ae5433688a4}</v>
+                <v n="FlagPosition" t="Double">0.5</v>
+                <d n="flagsX" t="Hashtable" ckt="String" cvt="Int32">
+                  <v>EndElement</v>
+                  <v>0</v>
+                </d>
+                <d n="flagsY" t="Hashtable" ckt="String" cvt="Int32">
+                  <v>EndElement</v>
+                  <v>0</v>
+                </d>
+                <o n="StartAnchor" t="UMLAnchorPoint">
+                  <v n="AnchorID">0</v>
+                  <v n="AnchorLeftPosition">392</v>
+                  <v n="AnchorTopPosition">125</v>
+                  <v n="AnchorRelationID">{bb127ae6-9b50-4855-9cfc-1ae5433688a4}</v>
+                  <v n="StartAnchor">true</v>
+                  <v n="EndAnchor">false</v>
+                  <v n="AnchorDockedState" t="Docked">Right</v>
+                </o>
+                <o n="EndAnchor" t="UMLAnchorPoint">
+                  <v n="AnchorID">3</v>
+                  <v n="AnchorLeftPosition">725</v>
+                  <v n="AnchorTopPosition">465</v>
+                  <v n="AnchorRelationID">{bb127ae6-9b50-4855-9cfc-1ae5433688a4}</v>
+                  <v n="StartAnchor">false</v>
+                  <v n="EndAnchor">true</v>
+                  <v n="AnchorDockedState" t="Docked">Left</v>
+                </o>
+                <v n="NextAnchorID">3</v>
+                <d n="AnchorPoints" t="Hashtable" ckt="Int32" cvt="UMLAnchorPoint">
+                  <v>2</v>
+                  <o>
+                    <v n="AnchorID">2</v>
+                    <v n="AnchorLeftPosition">558</v>
+                    <v n="AnchorTopPosition">465</v>
+                    <v n="AnchorRelationID">{bb127ae6-9b50-4855-9cfc-1ae5433688a4}</v>
+                    <v n="StartAnchor">false</v>
+                    <v n="EndAnchor">false</v>
+                    <v n="AnchorDockedState" t="Docked">NotDocked</v>
+                  </o>
+                  <v>1</v>
+                  <o>
+                    <v n="AnchorID">1</v>
+                    <v n="AnchorLeftPosition">558</v>
+                    <v n="AnchorTopPosition">125</v>
+                    <v n="AnchorRelationID">{bb127ae6-9b50-4855-9cfc-1ae5433688a4}</v>
+                    <v n="StartAnchor">false</v>
+                    <v n="EndAnchor">false</v>
+                    <v n="AnchorDockedState" t="Docked">NotDocked</v>
+                  </o>
+                </d>
+                <v n="RelationIsLinear">true</v>
+                <v n="RelationIsFreeHand">false</v>
+              </o>
+              <v n="ReferenceGuid">{bb127ae6-9b50-4855-9cfc-1ae5433688a4}</v>
+              <v n="RelationGuid">{bb127ae6-9b50-4855-9cfc-1ae5433688a4}</v>
+              <v n="RelationName">""</v>
+              <n n="RelationStereotypes" />
+              <v n="RelationType" t="RelationTypes">Composition</v>
+              <v n="IsReferenceTo">false</v>
+              <v n="StartElementArrowFlag" t="ArrowTypes">FilledDiamond</v>
+              <v n="Priority">1</v>
+              <v n="GeneratesCode">true</v>
+              <v n="StartElementShowArrow">true</v>
+              <v n="StartElementCardnality">""</v>
+              <v n="EndElementCardnality">"1"</v>
+              <v n="EndElementArrowFlag" t="ArrowTypes">Slim</v>
+              <v n="EndElementShowArrow">true</v>
+              <v n="StartElementRoleName">""</v>
+              <v n="EndElementRoleName">"kierunekRuchu"</v>
+              <v n="UserCreated">true</v>
+              <v n="GeneratedByCode">false</v>
+              <v n="AllowRoutingOptimisation">true</v>
+              <d n="flagTexts" t="Hashtable" />
+              <v n="Position">-1L</v>
+              <v n="PositionCounter">1L</v>
+              <v n="IsModified">false</v>
+              <v n="ARGBElementColor">0</v>
+            </o>
+            <v>9235ccf3-792e-48cd-b642-83b650e983c7</v>
+            <o>
+              <v n="HasGraphicalRepresentation">true</v>
+              <v n="StartUMLElement">{31d2fabe-7c50-423b-aa7d-c8ea19a5f486}</v>
+              <v n="HighlightedLine">false</v>
+              <v n="ZOrder">27U</v>
+              <v n="SpecialHandling">false</v>
+              <v n="ActionLocalVariableName">""</v>
+              <v n="ActionParametersString">""</v>
+              <n n="ActionName" />
+              <v n="ActionText">""</v>
+              <v n="InjectedActionCode">""</v>
+              <v n="ActionTextLength">100</v>
+              <v n="ConditionText">"TRUE"</v>
+              <v n="LengthConditionText">100</v>
+              <v n="RelationID">6</v>
+              <v n="TriggerlessStatechartTransition">true</v>
+              <v n="EndUMLElement">{25a6e70c-d6b6-4e4c-b5cd-a7be8fa3a0e4}</v>
+              <o n="UMLRelationVisualisation" t="UMLRelationVisualisation">
+                <v n="RelationID">{9235ccf3-792e-48cd-b642-83b650e983c7}</v>
+                <v n="FlagPosition" t="Double">0.5</v>
+                <d n="flagsX" t="Hashtable" />
+                <d n="flagsY" t="Hashtable" />
+                <o n="StartAnchor" t="UMLAnchorPoint">
+                  <v n="AnchorID">0</v>
+                  <v n="AnchorLeftPosition">145</v>
+                  <v n="AnchorTopPosition">526</v>
+                  <v n="AnchorRelationID">{9235ccf3-792e-48cd-b642-83b650e983c7}</v>
+                  <v n="StartAnchor">true</v>
+                  <v n="EndAnchor">false</v>
+                  <v n="AnchorDockedState" t="Docked">Bottom</v>
+                </o>
+                <o n="EndAnchor" t="UMLAnchorPoint">
+                  <v n="AnchorID">3</v>
+                  <v n="AnchorLeftPosition">25</v>
+                  <v n="AnchorTopPosition">565</v>
+                  <v n="AnchorRelationID">{9235ccf3-792e-48cd-b642-83b650e983c7}</v>
+                  <v n="StartAnchor">false</v>
+                  <v n="EndAnchor">true</v>
+                  <v n="AnchorDockedState" t="Docked">Top</v>
+                </o>
+                <v n="NextAnchorID">3</v>
+                <d n="AnchorPoints" t="Hashtable" ckt="Int32" cvt="UMLAnchorPoint">
+                  <v>2</v>
+                  <o>
+                    <v n="AnchorID">2</v>
+                    <v n="AnchorLeftPosition">25</v>
+                    <v n="AnchorTopPosition">535</v>
+                    <v n="AnchorRelationID">{9235ccf3-792e-48cd-b642-83b650e983c7}</v>
+                    <v n="StartAnchor">false</v>
+                    <v n="EndAnchor">false</v>
+                    <v n="AnchorDockedState" t="Docked">NotDocked</v>
+                  </o>
+                  <v>1</v>
+                  <o>
+                    <v n="AnchorID">1</v>
+                    <v n="AnchorLeftPosition">145</v>
+                    <v n="AnchorTopPosition">535</v>
+                    <v n="AnchorRelationID">{9235ccf3-792e-48cd-b642-83b650e983c7}</v>
+                    <v n="StartAnchor">false</v>
+                    <v n="EndAnchor">false</v>
+                    <v n="AnchorDockedState" t="Docked">NotDocked</v>
+                  </o>
+                </d>
+                <v n="RelationIsLinear">true</v>
+                <v n="RelationIsFreeHand">false</v>
+              </o>
+              <v n="ReferenceGuid">{9235ccf3-792e-48cd-b642-83b650e983c7}</v>
+              <v n="RelationGuid">{9235ccf3-792e-48cd-b642-83b650e983c7}</v>
+              <v n="RelationName">""</v>
+              <n n="RelationStereotypes" />
+              <v n="RelationType" t="RelationTypes">Composition</v>
+              <v n="IsReferenceTo">false</v>
+              <v n="StartElementArrowFlag" t="ArrowTypes">FilledDiamond</v>
+              <v n="Priority">1</v>
+              <v n="GeneratesCode">true</v>
+              <v n="StartElementShowArrow">true</v>
+              <v n="StartElementCardnality">""</v>
+              <v n="EndElementCardnality">"1"</v>
+              <v n="EndElementArrowFlag" t="ArrowTypes">Slim</v>
+              <v n="EndElementShowArrow">true</v>
+              <v n="StartElementRoleName">""</v>
+              <v n="EndElementRoleName">"poleGry"</v>
+              <v n="UserCreated">true</v>
+              <v n="GeneratedByCode">false</v>
+              <v n="AllowRoutingOptimisation">false</v>
+              <d n="flagTexts" t="Hashtable" />
+              <v n="Position">-1L</v>
+              <v n="PositionCounter">1L</v>
+              <v n="IsModified">false</v>
+              <v n="ARGBElementColor">0</v>
+            </o>
+            <v>acc54483-5096-45a9-afd3-69fc306580bd</v>
+            <o>
+              <v n="HasGraphicalRepresentation">true</v>
+              <v n="StartUMLElement">{31d2fabe-7c50-423b-aa7d-c8ea19a5f486}</v>
+              <v n="HighlightedLine">false</v>
+              <v n="ZOrder">31U</v>
+              <v n="SpecialHandling">false</v>
+              <v n="ActionLocalVariableName">""</v>
+              <v n="ActionParametersString">""</v>
+              <n n="ActionName" />
+              <v n="ActionText">""</v>
+              <v n="InjectedActionCode">""</v>
+              <v n="ActionTextLength">100</v>
+              <v n="ConditionText">"TRUE"</v>
+              <v n="LengthConditionText">100</v>
+              <v n="RelationID">5</v>
+              <v n="TriggerlessStatechartTransition">true</v>
+              <v n="EndUMLElement">{12d3453c-e68a-4d1f-ae44-22ee6a2954e9}</v>
+              <o n="UMLRelationVisualisation" t="UMLRelationVisualisation">
+                <v n="RelationID">{acc54483-5096-45a9-afd3-69fc306580bd}</v>
+                <v n="FlagPosition" t="Double">0.5</v>
+                <d n="flagsX" t="Hashtable" ckt="String" cvt="Int32">
+                  <v>EndElement</v>
+                  <v>0</v>
+                </d>
+                <d n="flagsY" t="Hashtable" ckt="String" cvt="Int32">
+                  <v>EndElement</v>
+                  <v>0</v>
+                </d>
+                <o n="StartAnchor" t="UMLAnchorPoint">
+                  <v n="AnchorID">0</v>
+                  <v n="AnchorLeftPosition">392</v>
+                  <v n="AnchorTopPosition">212</v>
+                  <v n="AnchorRelationID">{acc54483-5096-45a9-afd3-69fc306580bd}</v>
+                  <v n="StartAnchor">true</v>
+                  <v n="EndAnchor">false</v>
+                  <v n="AnchorDockedState" t="Docked">NotDocked</v>
+                </o>
+                <o n="EndAnchor" t="UMLAnchorPoint">
+                  <v n="AnchorID">3</v>
+                  <v n="AnchorLeftPosition">665</v>
+                  <v n="AnchorTopPosition">50</v>
+                  <v n="AnchorRelationID">{acc54483-5096-45a9-afd3-69fc306580bd}</v>
+                  <v n="StartAnchor">false</v>
+                  <v n="EndAnchor">true</v>
+                  <v n="AnchorDockedState" t="Docked">NotDocked</v>
+                </o>
+                <v n="NextAnchorID">1</v>
+                <d n="AnchorPoints" t="Hashtable" ckt="Int32" cvt="UMLAnchorPoint">
+                  <v>2</v>
+                  <o>
+                    <v n="AnchorID">2</v>
+                    <v n="AnchorLeftPosition">600</v>
+                    <v n="AnchorTopPosition">50</v>
+                    <v n="AnchorRelationID">{acc54483-5096-45a9-afd3-69fc306580bd}</v>
+                    <v n="StartAnchor">false</v>
+                    <v n="EndAnchor">false</v>
+                    <v n="AnchorDockedState" t="Docked">NotDocked</v>
+                  </o>
+                  <v>1</v>
+                  <o>
+                    <v n="AnchorID">1</v>
+                    <v n="AnchorLeftPosition">600</v>
+                    <v n="AnchorTopPosition">212</v>
+                    <v n="AnchorRelationID">{acc54483-5096-45a9-afd3-69fc306580bd}</v>
+                    <v n="StartAnchor">false</v>
+                    <v n="EndAnchor">false</v>
+                    <v n="AnchorDockedState" t="Docked">NotDocked</v>
+                  </o>
+                </d>
+                <v n="RelationIsLinear">true</v>
+                <v n="RelationIsFreeHand">false</v>
+              </o>
+              <v n="ReferenceGuid">{acc54483-5096-45a9-afd3-69fc306580bd}</v>
+              <v n="RelationGuid">{acc54483-5096-45a9-afd3-69fc306580bd}</v>
+              <v n="RelationName">""</v>
+              <n n="RelationStereotypes" />
+              <v n="RelationType" t="RelationTypes">Generalization</v>
+              <v n="IsReferenceTo">false</v>
+              <v n="StartElementArrowFlag" t="ArrowTypes">None</v>
+              <v n="Priority">1</v>
+              <v n="GeneratesCode">true</v>
+              <v n="StartElementShowArrow">false</v>
+              <v n="StartElementCardnality">""</v>
+              <v n="EndElementCardnality">""</v>
+              <v n="EndElementArrowFlag" t="ArrowTypes">Bold</v>
+              <v n="EndElementShowArrow">true</v>
+              <v n="StartElementRoleName">""</v>
+              <v n="EndElementRoleName">""</v>
+              <v n="UserCreated">true</v>
+              <v n="GeneratedByCode">false</v>
+              <v n="AllowRoutingOptimisation">false</v>
+              <d n="flagTexts" t="Hashtable" />
+              <v n="Position">-1L</v>
+              <v n="PositionCounter">1L</v>
+              <v n="IsModified">false</v>
+              <v n="ARGBElementColor">0</v>
+            </o>
+            <v>c4717690-e2b7-4e38-ba8d-1e1c4004e787</v>
+            <o>
+              <v n="HasGraphicalRepresentation">true</v>
+              <v n="StartUMLElement">{003304d9-0937-481e-94b7-806557916c6d}</v>
+              <v n="HighlightedLine">false</v>
+              <v n="ZOrder">27U</v>
+              <v n="SpecialHandling">false</v>
+              <v n="ActionLocalVariableName">""</v>
+              <v n="ActionParametersString">""</v>
+              <n n="ActionName" />
+              <v n="ActionText">""</v>
+              <v n="InjectedActionCode">""</v>
+              <v n="ActionTextLength">100</v>
+              <v n="ConditionText">"TRUE"</v>
+              <v n="LengthConditionText">100</v>
+              <v n="RelationID">8</v>
+              <v n="TriggerlessStatechartTransition">true</v>
+              <v n="EndUMLElement">{31d2fabe-7c50-423b-aa7d-c8ea19a5f486}</v>
+              <o n="UMLRelationVisualisation" t="UMLRelationVisualisation">
+                <v n="RelationID">{c4717690-e2b7-4e38-ba8d-1e1c4004e787}</v>
+                <v n="FlagPosition" t="Double">0.5</v>
+                <d n="flagsX" t="Hashtable" />
+                <d n="flagsY" t="Hashtable" />
+                <o n="StartAnchor" t="UMLAnchorPoint">
+                  <v n="AnchorID">0</v>
+                  <v n="AnchorLeftPosition">105</v>
+                  <v n="AnchorTopPosition">47</v>
+                  <v n="AnchorRelationID">{c4717690-e2b7-4e38-ba8d-1e1c4004e787}</v>
+                  <v n="StartAnchor">true</v>
+                  <v n="EndAnchor">false</v>
+                  <v n="AnchorDockedState" t="Docked">Right</v>
+                </o>
+                <o n="EndAnchor" t="UMLAnchorPoint">
+                  <v n="AnchorID">3</v>
+                  <v n="AnchorLeftPosition">392</v>
+                  <v n="AnchorTopPosition">115</v>
+                  <v n="AnchorRelationID">{c4717690-e2b7-4e38-ba8d-1e1c4004e787}</v>
+                  <v n="StartAnchor">false</v>
+                  <v n="EndAnchor">true</v>
+                  <v n="AnchorDockedState" t="Docked">Right</v>
+                </o>
+                <v n="NextAnchorID">3</v>
+                <d n="AnchorPoints" t="Hashtable" ckt="Int32" cvt="UMLAnchorPoint">
+                  <v>2</v>
+                  <o>
+                    <v n="AnchorID">2</v>
+                    <v n="AnchorLeftPosition">492</v>
+                    <v n="AnchorTopPosition">115</v>
+                    <v n="AnchorRelationID">{c4717690-e2b7-4e38-ba8d-1e1c4004e787}</v>
+                    <v n="StartAnchor">false</v>
+                    <v n="EndAnchor">false</v>
+                    <v n="AnchorDockedState" t="Docked">NotDocked</v>
+                  </o>
+                  <v>1</v>
+                  <o>
+                    <v n="AnchorID">1</v>
+                    <v n="AnchorLeftPosition">492</v>
+                    <v n="AnchorTopPosition">47</v>
+                    <v n="AnchorRelationID">{c4717690-e2b7-4e38-ba8d-1e1c4004e787}</v>
+                    <v n="StartAnchor">false</v>
+                    <v n="EndAnchor">false</v>
+                    <v n="AnchorDockedState" t="Docked">NotDocked</v>
+                  </o>
+                </d>
+                <v n="RelationIsLinear">true</v>
+                <v n="RelationIsFreeHand">false</v>
+              </o>
+              <v n="ReferenceGuid">{c4717690-e2b7-4e38-ba8d-1e1c4004e787}</v>
+              <v n="RelationGuid">{c4717690-e2b7-4e38-ba8d-1e1c4004e787}</v>
+              <v n="RelationName">""</v>
+              <n n="RelationStereotypes" />
+              <v n="RelationType" t="RelationTypes">Composition</v>
+              <v n="IsReferenceTo">false</v>
+              <v n="StartElementArrowFlag" t="ArrowTypes">FilledDiamond</v>
+              <v n="Priority">1</v>
+              <v n="GeneratesCode">true</v>
+              <v n="StartElementShowArrow">true</v>
+              <v n="StartElementCardnality">""</v>
+              <v n="EndElementCardnality">"1"</v>
+              <v n="EndElementArrowFlag" t="ArrowTypes">Slim</v>
+              <v n="EndElementShowArrow">true</v>
+              <v n="StartElementRoleName">""</v>
+              <v n="EndElementRoleName">"gra"</v>
+              <v n="UserCreated">true</v>
+              <v n="GeneratedByCode">false</v>
+              <v n="AllowRoutingOptimisation">false</v>
+              <d n="flagTexts" t="Hashtable" />
+              <v n="Position">-1L</v>
+              <v n="PositionCounter">1L</v>
+              <v n="IsModified">false</v>
+              <v n="ARGBElementColor">0</v>
+            </o>
+          </d>
+          <v n="NextRelationID">0</v>
+          <v n="DefaultAutomaticLayout">false</v>
+          <o n="ClassDiagrammProperties" t="UMLDiagramProperties">
+            <v n="ArrayOfPointerToClassPresentation" t="RelationTypes">Association</v>
+            <v n="ArrayOfClassPresentation" t="RelationTypes">Composition</v>
+            <v n="ArrayOfInterfacePresentation" t="RelationTypes">Association</v>
+            <v n="ArrayOfInterfaceAggregationPresentation" t="RelationTypes">Aggregation</v>
+            <v n="PointerToClassPresentation" t="RelationTypes">Association</v>
+            <v n="ClassPresentation" t="RelationTypes">Composition</v>
+            <v n="InterfacePresentation" t="RelationTypes">Association</v>
+            <v n="InterfaceAggregationPresentation" t="RelationTypes">Aggregation</v>
+            <v n="ShowRoleNames">true</v>
+            <v n="ShowCardinalities">true</v>
+            <v n="ShowRelationNames">true</v>
+            <v n="ShowAttributesinClasses">false</v>
+            <v n="ShowMethodsInClasses">false</v>
+            <v n="ParametersMaximumLength">20</v>
+          </o>
+          <v n="IsFastStateDiagram">false</v>
+          <l n="StereoTypeProfile" t="ArrayList" />
+          <v n="RelationRoleID">32</v>
+          <d n="PositionSerialization" t="Hashtable" />
+        </o>
+      </Data>
+      <TypeList>
+        <Type n="ArrayList">System.Collections.ArrayList</Type>
+        <Type n="ArrowTypes">{812dac4c-85cd-4336-bb2f-f967774b251e}</Type>
+        <Type n="Boolean">System.Boolean</Type>
+        <Type n="ClassDiagram">{55fce3f2-a3ee-4e8d-9ae0-7ce1efc6092b}</Type>
+        <Type n="ClassDiagramElement">{351947c5-df11-4e62-bac4-ec0994b801eb}</Type>
+        <Type n="ClassElementVisualisation">{5171a014-a7d9-42a9-8696-2446328d10a8}</Type>
+        <Type n="Docked">{7586ffd4-4b2d-494c-aff5-a40d31dac111}</Type>
+        <Type n="Double">System.Double</Type>
+        <Type n="Guid">System.Guid</Type>
+        <Type n="Hashtable">System.Collections.Hashtable</Type>
+        <Type n="Int16">System.Int16</Type>
+        <Type n="Int32">System.Int32</Type>
+        <Type n="Int64">System.Int64</Type>
+        <Type n="RelationTypes">{f5146002-a332-47c0-9d9a-7997d539e6a9}</Type>
+        <Type n="String">System.String</Type>
+        <Type n="UInt32">System.UInt32</Type>
+        <Type n="UMLAnchorPoint">{610ad96d-085d-4ced-95e0-831f42edefc2}</Type>
+        <Type n="UMLDiagramProperties">{71bc64fb-98e8-4f9a-b2ec-0da66cfaa0a0}</Type>
+        <Type n="UMLElementAttribute">{c3a7e8fe-23f0-4537-9727-98242d9e6a53}</Type>
+        <Type n="UMLElementMethod">{75919824-d3c5-4f27-b307-1f6e74481699}</Type>
+        <Type n="UMLRelation">{66eb2f12-934d-4c0a-8710-d6fec8d1ff48}</Type>
+        <Type n="UMLRelationVisualisation">{79af0d10-00d2-4abe-9c91-6b4e07d4aa1d}</Type>
+        <Type n="UMLType">{0197b136-405a-42ee-bb27-fd08b621d0cf}</Type>
+      </TypeList>
+    </XmlArchive>
+  </ClassDiagram>
+</TcPlcObject>

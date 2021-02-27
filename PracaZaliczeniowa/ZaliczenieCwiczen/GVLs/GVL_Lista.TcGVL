@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
+  <GVL Name="GVL_Lista" Id="{e989c6cf-27f3-4e2a-ba88-592c4c5f81ad}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	
+	iNajWynik:INT;
+	iObecnyWynik:INT;
+	bStanGry:BOOL;
+	bStanStrzalek:ARRAY[1..4]OF BOOL; //prawa[1],dol[2],lewo[3],gora[4]
+	bStanPrzyciskuRestart:BOOL;
+	bStanPRzyciskuStartu:BOOL;
+	iRekord:INT;
+	
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>
